@@ -4,6 +4,7 @@ import FeatureProjects from './components/sections/FeatureProjects/FeatureProjec
 import AboutMe from './components/sections/AboutMe/AboutMe';
 import Blog from './components/sections/Blog/Blog';
 import Contact from './components/sections/Contact/Contact';
+import Footer from './components/sections/Footer/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <AboutMe />
       <Blog />
       <Contact />
+      <Footer />
     </div>
   );
 }
