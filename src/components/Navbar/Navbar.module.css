@@ -1,8 +1,8 @@
 .hamburgerMenu {
-  position: fixed;
-  margin: 23px auto auto 20px;
   height: 40px;
   width: 40px;
+  position: fixed;
+  margin: 23px auto auto 20px;
   animation: fadeIn 1s;
 }
 
@@ -20,9 +20,10 @@
   filter: invert(100%);
 }
 
-.hideMenu {
+.hamburgerMenu.hideMenu {
   display: none;
 }
+
 
 @keyframes fadeIn {
     0% { opacity: 0; }
