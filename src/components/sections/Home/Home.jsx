@@ -11,7 +11,7 @@ import Dots from '../../../assets/dots.svg'
 
 function Home() {
   return (
-    <section className={style.homeSection}>
+    <section id="homeSection" className={style.homeSection}>
       <img src={Globe} alt="" className={style.globeImage}/>
       <div>
         <p>HELLO WORLD.</p>
