@@ -106,22 +106,22 @@ function Navbar() {
           ))}
         </ul>
         <div className={style.icons}>
-            <a href=""> 
+            <a href="https://github.com/estebanmual"> 
                 <button><img src={Github} alt="" className={style.icon} /></button>
             </a>
-            <a href=""> 
+            <a href="https://www.linkedin.com/in/estebanmual"> 
                 <button><img src={Linkedin} alt="" className={style.icon} /></button>
             </a>
-            <a href=""> 
+            <a href="https://medium.com/@estebanmual"> 
                 <button><img src={Medium} alt="" className={style.icon} /></button>
             </a>
-            <a href=""> 
+            <a href="https://twitter.com/estebanmual"> 
                 <button><img src={Twitter} alt="" className={style.icon} /></button>
             </a>
-            <a href=""> 
+            <a href="https://angel.co/u/estebanmual"> 
                 <button><img src={Angelist} alt="" className={style.icon} /></button>
             </a>
-            <a href=""> 
+            <a href="https://www.instagram.com/estebanmual/"> 
                 <button><img src={Instagram} alt="" className={style.icon} /></button>
             </a>
         </div>

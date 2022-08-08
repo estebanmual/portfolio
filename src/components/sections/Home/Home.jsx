@@ -21,12 +21,12 @@ function Home() {
       <button className={style.moreButton}>MORE ABOUT ME</button>
 
       <div className={style.socialIcons}>
-        <a href="#"><img src={Github} alt="Github" /></a>
-        <a href="#"><img src={Linkedin} alt="Linkedin" /></a>
-        <a href="#"><img src={Medium} alt="Medium" /></a>
-        <a href="#"><img src={Twitter} alt="Twitter" /></a>
-        <a href="#"><img src={Angelist} alt="Angellist" /></a>
-        <a href="#"><img src={Instagram} alt="Instagram" /></a>
+        <a href="https://github.com/estebanmual"><img src={Github} alt="Github" /></a>
+        <a href="https://www.linkedin.com/in/estebanmual"><img src={Linkedin} alt="Linkedin" /></a>
+        <a href="https://medium.com/@estebanmual"><img src={Medium} alt="Medium" /></a>
+        <a href="https://twitter.com/estebanmual"><img src={Twitter} alt="Twitter" /></a>
+        <a href="https://angel.co/u/estebanmual"><img src={Angelist} alt="Angellist" /></a>
+        <a href="https://www.instagram.com/estebanmual/"><img src={Instagram} alt="Instagram" /></a>
       </div>
       <img src={Dots} alt="" className={style.dotsImage}/>
     </section>
