@@ -3,7 +3,7 @@
   width: 40px;
   position: fixed;
   margin: 23px auto auto 20px;
-  animation: fadeIn 1s;
+  z-index: 10;
 }
 
 .hamburgerButton {
@@ -24,8 +24,74 @@
   display: none;
 }
 
+.blueBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #0058CC;
+  padding: 35px 45px;
+}
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+.blueBox p {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.menu {
+  position: fixed;
+  background: #ffffff;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 24px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  color: #000000;
+}
+
+.open {
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  position: relative;
+  bottom: -40px;
+}
+
+.icon {
+  filter: invert(1);
+  width: 22px;
+  height: 22px;
+}
+
+.icons button {
+  background: none;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

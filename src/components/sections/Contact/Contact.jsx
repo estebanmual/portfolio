@@ -4,7 +4,7 @@ import style from './Contact.module.css'
 
 function Contact() {
   return (
-    <section className={style.ContactSection}>
+    <section className={style.ContactSection} id="contactSection">
         <h1>Let's <img src={Arrow} alt="Right arrow" /> <br/> Connect.</h1>
         <form>
             <div className={style.group}>

@@ -23,7 +23,7 @@ function AboutMe() {
   ];
 
   return (
-    <section className={style.aboutMeSection}>
+    <section className={style.aboutMeSection} id="aboutMeSection">
       <div className={style.header}>
         <h2 className={style.title}>About Me</h2>
         <hr className={style.hr} />
@@ -42,6 +42,7 @@ function AboutMe() {
         style={{
           fontSize: "3.75vw",
           fontFamily: "poppins",
+          "z-index": "0",
         }}
         radius={150}
         blur={false}
