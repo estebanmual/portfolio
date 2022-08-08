@@ -10,6 +10,12 @@ import Globe from '../../../assets/globe.svg'
 import Dots from '../../../assets/dots.svg'
 
 function Home() {
+
+  const clickLink = (e) => {
+    e.preventDefault();
+    window.scrollTo(0, document.getElementById("aboutMeSection").offsetTop);
+  }
+
   return (
     <section id="homeSection" className={style.homeSection}>
       <img src={Globe} alt="" className={style.globeImage}/>
@@ -18,7 +24,7 @@ function Home() {
         <h1>I'm Esteban Munoz</h1>
         <p>| FULL-STACK DEVELOPER |</p>
       </div>
-      <button className={style.moreButton}>MORE ABOUT ME</button>
+      <button className={style.moreButton} onClick={(e) => {clickLink(e)}}>MORE ABOUT ME</button>
 
       <div className={style.socialIcons}>
         <a href="https://github.com/estebanmual"><img src={Github} alt="Github" /></a>
