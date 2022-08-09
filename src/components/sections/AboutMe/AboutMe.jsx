@@ -42,7 +42,7 @@ function AboutMe() {
         style={{
           fontSize: "3.75vw",
           fontFamily: "poppins",
-          "z-index": "0",
+          "zIndex": "0",
         }}
         radius={150}
         blur={false}
