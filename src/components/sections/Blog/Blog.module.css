@@ -1,8 +1,14 @@
-.aboutMeSection {
+.blogSection {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px 25px;
+    height: 80vh;
+    padding-top: 50px;
+}
+
+.blogSection p {
+  text-align: center;
 }
 
 .header {

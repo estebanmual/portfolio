@@ -21,11 +21,12 @@ function Blog() {
 
   getMediumData();
   return (
-    <section className={style.BlogSection} id="blogSection">
+    <section className={style.blogSection} id="blogSection">
       <div className={style.header}>
         <h2 className={style.title}>Blog</h2>
         <hr className={style.hr} />
       </div>
+      <p>Here you can find my most recent articles posted in <strong>Medium</strong>.  <br />  Feel free to check them out. </p>
       <Swiper
         slidesPerView={1}
         spaceBetween={0}

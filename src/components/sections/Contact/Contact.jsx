@@ -2,6 +2,7 @@ import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Arrow from "../../../assets/right-arrow.svg";
 import style from "./Contact.module.css";
+import Footer from "../Footer/Footer";
 
 function Contact() {
   const [state, handleSubmit] = useForm("xrgdgzaa");
@@ -72,6 +73,7 @@ function Contact() {
           </button>
         </form>
       )}
+      <Footer />
     </section>
   );
 }
