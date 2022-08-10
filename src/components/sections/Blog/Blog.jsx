@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./Blog.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -11,10 +11,12 @@ function Blog() {
   const RSSURL = `https://medium.com/feed/@${username}`;
   const RSSConverter = `https://api.rss2json.com/v1/api.json?rss_url=${RSSURL}`;
 
+  const [blogs, setBlogs] = useState([]);
+
   const getMediumData = async () => {
     const response = await fetch(RSSConverter);
     const data = await response.json();
-    console.log(data.items);
+    setBlogs(data.items);
   }
 
   getMediumData();
@@ -33,21 +35,15 @@ function Blog() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        {blogs.map((blog) => (
+          <SwiperSlide>
           <div className={style.card}>
-            <h3 className={style.blogCardTitle}>Card 1</h3>
+            <img src={blog.thumbnail} className={style.cardImage} alt="Blog thumbnail" />
+            <h3 className={style.blogCardTitle}>{blog.title}</h3>
+            <a href={blog.link}><button className={style.moreButton}>READ MORE</button></a>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className={style.card}>
-            <h3 className={style.blogCardTitle}>Card 1</h3>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className={style.card}>
-            <h3 className={style.blogCardTitle}>Card 1</h3>
-          </div>
-        </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   );
