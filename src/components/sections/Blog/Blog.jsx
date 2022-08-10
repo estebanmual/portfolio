@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import style from "./Blog.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -12,14 +12,16 @@ function Blog() {
   const RSSConverter = `https://api.rss2json.com/v1/api.json?rss_url=${RSSURL}`;
 
   const [blogs, setBlogs] = useState([]);
-
   const getMediumData = async () => {
     const response = await fetch(RSSConverter);
     const data = await response.json();
     setBlogs(data.items);
   }
 
-  getMediumData();
+  useEffect(() => {
+    getMediumData();
+  },[])
+
   return (
     <section className={style.blogSection} id="blogSection">
       <div className={style.header}>
