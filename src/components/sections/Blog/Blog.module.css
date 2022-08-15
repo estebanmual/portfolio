@@ -41,7 +41,7 @@
   .card {
     width: 190px;
     height: 280px;
-    background: #07182E;
+    background: linear-gradient(180deg, #0058CC 0%, #0C2444 65%, #000000 100%);
     position: relative;
     display: flex;
     place-content: center;
@@ -73,7 +73,7 @@
   .card::after {
     content: '';
     position: absolute;
-    background: #07182E;
+    background: linear-gradient(180deg, #0058CC 0%, #0C2444 65%, #000000 100%);
     inset: 5px;
     border-radius: 15px;
   } 

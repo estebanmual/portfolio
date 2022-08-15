@@ -32,7 +32,7 @@ function AboutMe() {
           Hi, I'm Esteban, <strong>full-stack developer</strong> passionate
           about the frontend. I enjoy solving problems with clean scalable
           solutions. <br /><br />
-          At the moment, I'm studying <strong>systems engineering</strong> at
+          At the moment, I'm studying <strong>computer systems engineering</strong> at
           college. I am also dedicate my time to learn new things and adapt to
           the new technologies out there. <br /><br />
           I love JavaScript, and right now I'm working with <strong>React</strong> and <strong>Ruby on Rails</strong> to develop my projects.
